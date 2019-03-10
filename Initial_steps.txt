@@ -1,0 +1,16 @@
+Creates package.json file 
+npm init -y
+
+Installing node modules
+npm i express bcryptjs passport passport-local ejs express-ejs-layouts mongoose connect-flash express-session
+
+Installing nodemon
+npm i -D nodemon
+
+Changes in package.json
+"name": "learnart",
+"main": "app.js",
+"scripts": {
+	"start": "node app.js"
+	"dev": "nodemon app.js"
+} 
