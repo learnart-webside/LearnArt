@@ -1,19 +1,12 @@
-Creates package.json file 
-npm init -y
-
-Installing node modules
-npm i express bcryptjs passport passport-local ejs express-ejs-layouts mongoose connect-flash express-session
-
-Installing nodemon
-npm i -D nodemon
-
-Changes in package.json
-"name": "learnart",
-"main": "app.js",
-"scripts": {
-	"start": "node app.js"
-	"dev": "nodemon app.js"
-} 
+Download the clone 
+Store all files in LearnArt folder
+Open the folder in Visual Studio code
+Ctrl + Shift + ` (To open the terminal)
+Type the below in terminal 
+npm install
 
 Start the server 
 npm run dev
+
+open in browser 
+localhost:5000
