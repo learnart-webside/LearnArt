@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnArt-Drawing</title>
+    <link rel = "icon" type = "image/png" href = "\images\art2.png">
+    <script src="p5\p5.min.js"></script>
+    <script src="p5\p5.scribble.js"></script>
+    <script src="p5\addons\p5.dom.min.js"></script>
+    <script src="p5\p5.speech.js"></script>
+    <script src="sketch.js"></script>
+    <script src="lib\matrix.js"></script>
+    <script src="lib\nn.js"></script>
+    <script src="lib\codeToViewDataset.js"></script>
+    <script src="lib\trainingAndTesting.js"></script>
+    <script src="lib\preparedData.js"></script>
+    <script src="lib\vanillatoasts.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/sketchy/bootstrap.min.css"
+    />
+    <link rel = "stylesheet" href="lib\vanillatoasts.css">
+    <link rel = "stylesheet" href="loaders.css">
+    <!-- <link rel = "stylesheet" href="/lib/main.css"> -->
+    <style>
+      table {
+        border-collapse: collapse;
+        border: 3px solid black;
+      }
+      .loader {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+    }
+    </style>
+  </head>
+  
+  <body onload="preload('BASKETBALL');">
+      <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="/dashboard">LearnArt</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/learnart-webside/LearnArt" target="_blank">Source Code</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav pull-right">
+                    <li class="nav-item">
+                  <a class="nav-link" href="/users/logout">Logout</a>
+                </li>
+                </ul>
+              </div>
+            </nav>
+            <br>
+        <div align="center">
+            <!-- <a href="#" class="btn btn-outline-secondary" id="train">Train</a>
+            <a href="#" class="btn btn-outline-secondary" id="test">Test</a> -->
+            <!-- <button class="square_btn" onclick="myFunction()">Guess</button> -->
+            <a href="#" class="btn btn-outline-secondary" id="guess">Check</a>
+            <a href="#" class="btn btn-outline-secondary" id="clear">Clear</a>
+            <a href="/dashboard" class="btn btn-outline-secondary" id="home">Go back to dashboard</a>
+            <!-- <a href="#" id="show-toast-btn" id="guess">Guess</a> -->
+        <br>
+        <br>
+
+      <div class="loader">
+          <div class="loader-inner pacman">
+            <!-- <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div> -->
+          </div>
+  </div>
+    <main>
+              <table>
+          <tr>
+            <th>
+                <div id="sketch-holder">
+                    <!-- Our sketch will go here! -->
+                </div>
+            </th>
+          </tr>
+        </table>
+    </main>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+<script src="loaders.css.js"></script>
+<script>
+ $(document).ready(function(){
+    
+    $('main').hide();
+    
+    $(window).on({
+        load: function(){
+            $('.loader').hide();
+            $('main').show();
+        }
+    })
+    
+});
+</script>
+  </body>
+</html>
