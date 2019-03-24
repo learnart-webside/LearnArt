@@ -1,0 +1,22 @@
+body {
+    background-color: #EDC7B7;
+}
+
+#sketch-holder {
+    outline: 3px solid black;
+}
+    
+.square_btn {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #ac3b61;
+    border: solid 2px #ac3b61;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+.square_btn:hover {
+    background: #ac3b61;
+    color: white;
+}
